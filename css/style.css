@@ -1,6 +1,10 @@
 main {
     min-height: calc(100vh - 160px);
   }
+
+  body{
+    background-image: url("estrellas.jpg");
+  }
 /* Establecer la altura fija del cuerpo de la tarjeta */
 .card-body {
   height: 180px; /* Ajusta esta altura según tus necesidades */
