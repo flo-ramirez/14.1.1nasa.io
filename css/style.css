@@ -2,32 +2,31 @@ main {
     min-height: calc(100vh - 160px);
   }
 
-  body{
-    background-image: url("estrellas.jpg");
+  body {
+    background-color: rgba(18, 102, 197, 0.651);
   }
-/* Establecer la altura fija del cuerpo de la tarjeta */
+
+/* Altura fija del cuerpo de la tarjeta */
 .card-body {
-  height: 180px; /* Ajusta esta altura según tus necesidades */
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* Asegurar que las imágenes tengan una altura y anchura fija */
+
+/* Altura y ancho fijo de las imagenes*/
 .card-img-top {
-  object-fit: cover; /* Ajustar imagen sin distorsión */
+  object-fit: cover; /* Ajustar sin distorsión */
   width: 100%;       /* Hacer que la imagen ocupe todo el ancho del contenedor */
   height: 200px;     /* Ajustar la altura de la imagen */
 }
 
-
-/* Descripción con scroll */
 .card-text {
-  max-height: 120px; /* Ajusta para controlar cuánto texto se muestra */
+  max-height: 120px; /* Cuánto texto se muestra */
   overflow-y: auto;  /* Permitir scroll si el texto excede el espacio */
   padding-right: 10px; /* Espacio para el scrollbar */
 }
 
-/* Personalización del scrollbar */
 .card-text::-webkit-scrollbar {
   width: 8px;
 }
@@ -36,3 +35,8 @@ main {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
+#btnBuscar{
+  background-color: rgb(18, 102, 197, 0.651);
+  border-color: rgba(18, 102, 197, 0.651);
+} 
