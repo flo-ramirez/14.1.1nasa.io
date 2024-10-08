@@ -1,0 +1,16 @@
+main {
+    min-height: calc(100vh - 160px);
+  }
+  .card-text {
+    padding-right: 10px; /* Un pequeño espacio para el scroll */
+    overflow-y: auto; /* Forzar el scroll vertical si es necesario */
+}
+
+.card-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-text::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
