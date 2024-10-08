@@ -1,16 +1,34 @@
 main {
     min-height: calc(100vh - 160px);
   }
-  .card-text {
-    padding-right: 10px; /* Un pequeño espacio para el scroll */
-    overflow-y: auto; /* Forzar el scroll vertical si es necesario */
+/* Establecer la altura fija del cuerpo de la tarjeta */
+.card-body {
+  height: 180px; /* Ajusta esta altura según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Asegurar que las imágenes tengan una altura y anchura fija */
+.card-img-top {
+  object-fit: cover; /* Ajustar imagen sin distorsión */
+  width: 100%;       /* Hacer que la imagen ocupe todo el ancho del contenedor */
+  height: 200px;     /* Ajustar la altura de la imagen */
 }
 
+
+/* Descripción con scroll */
+.card-text {
+  max-height: 120px; /* Ajusta para controlar cuánto texto se muestra */
+  overflow-y: auto;  /* Permitir scroll si el texto excede el espacio */
+  padding-right: 10px; /* Espacio para el scrollbar */
+}
+
+/* Personalización del scrollbar */
 .card-text::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 .card-text::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }

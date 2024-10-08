@@ -38,8 +38,7 @@ document.getElementById('btnBuscar').addEventListener('click', function() {
 
                         // Descripción con scroll
                         const description = document.createElement('div');
-                        description.className = 'card-text overflow-auto'; // clase de bootstrap para el scroll
-                        description.style.maxHeight = '100px'; // Limitar altura a 100px
+                        description.className = 'card-text overflow-auto';
                         description.innerText = item.data[0].description || 'No description available';
 
                         // Añadir elementos al cuerpo de la tarjeta
@@ -70,3 +69,4 @@ document.getElementById('btnBuscar').addEventListener('click', function() {
             contenedor.appendChild(errorMessage);
         });
 });
+
