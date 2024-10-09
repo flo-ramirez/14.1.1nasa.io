@@ -41,6 +41,11 @@ document.getElementById('btnBuscar').addEventListener('click', function() {
                         description.className = 'card-text overflow-auto';
                         description.innerText = item.data[0].description || 'No description available';
 
+                        const date = document.createElement('p');
+                        date.className = 'text-muted mt-2';
+                        const dateCreated = new Date(item.data[0].date_created);
+                        date.innerText = `Fecha de publicación: ${dateCreated.toLocaleDateString()}`;
+
                         // Añadir elementos al cuerpo de la tarjeta
                         cardBody.appendChild(title);
                         cardBody.appendChild(description);
